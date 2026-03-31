@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2600 Studio — Diseño web de altura</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo" onclick="showSection('hero')">
+      <span style="font-style:italic;">2600</span> <em>Studio</em>
+    </div>
+    <ul class="nav-links" id="nav-menu">
+      <li><a onclick="showSection('hero')" id="nav-hero" class="active">Inicio</a></li>
+      <li><a onclick="showSection('sobre')" id="nav-sobre">Sobre mí</a></li>
+      <li><a onclick="showSection('proyectos')" id="nav-proyectos">Proyectos</a></li>
+      <li><a onclick="showSection('contacto')" id="nav-contacto">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="active">
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="hero-dots" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="hero-eyebrow">Disponible para proyectos</div>
+    <h1 class="hero-title">
+      Diseño y desarrollo<br>
+      <em>páginas web</em>
+    </h1>
+    <p class="hero-sub">
+      Creo sitios modernos, rápidos y elegantes con HTML, CSS y JavaScript —
+      cada proyecto hecho a medida para destacar tu negocio en digital.
+    </p>
+
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">3<span>+</span></div>
+        <div class="hero-stat-label">Proyectos entregados</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">100<span>%</span></div>
+        <div class="hero-stat-label">Código propio</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">&lt;24<span>h</span></div>
+        <div class="hero-stat-label">Tiempo de respuesta</div>
+      </div>
+    </div>
+
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="showSection('proyectos')">Ver mi trabajo</button>
+      <button class="btn-sec" onclick="showSection('contacto')">Contáctame &#x2192;</button>
+    </div>
+    <div class="hero-number" aria-hidden="true">2600</div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre">
+    <div class="section-label">Sobre mí</div>
+    <div class="about-layout">
+
+      <div>
+        <h2 class="about-title">Hola, soy<br><em>Julian Galeano</em></h2>
+
+        <p class="about-body">
+          Soy un <strong>desarrollador web bogotano</strong> apasionado por construir presencias digitales que realmente
+          funcionan.
+          Aunque llevo menos de un año en este camino, la velocidad con la que he crecido habla por sí sola —
+          cada proyecto me ha enseñado más que cualquier curso.
+        </p>
+        <p class="about-body">
+          Empecé a desarrollar web con un objetivo claro: <strong>quería construir algo propio</strong>
+          y no iba a esperar a que alguien más lo hiciera. Esa mentalidad de emprendedor es la que
+          llevo a cada proyecto — no solo escribo código, <strong>construyo herramientas que hacen
+            crecer negocios reales.</strong>
+        </p>
+        <p class="about-body">
+          Me especializo en <strong>HTML, CSS y JavaScript puro</strong> — sin frameworks innecesarios,
+          sin código inflado. Cada línea tiene un propósito. El resultado: sitios rápidos, limpios
+          y que se ven exactamente como los diseñé.
+        </p>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <span class="about-card-icon">🎓</span>
+            <div class="about-card-title">Ingeniería de Sistemas</div>
+            <div class="about-card-sub">Base técnica sólida en desarrollo y lógica de programación</div>
+          </div>
+          <div class="about-card">
+            <span class="about-card-icon">📍</span>
+            <div class="about-card-title">Bogotá, Colombia</div>
+            <div class="about-card-sub">A 2.600 m sobre el nivel del mar — trabajo con clientes locales e
+              internacionales</div>
+          </div>
+          <div class="about-card">
+            <span class="about-card-icon">🚀</span>
+            <div class="about-card-title">Enfoque en resultados</div>
+            <div class="about-card-sub">Sitios que no solo se ven bien sino que generan clientes</div>
+          </div>
+          <div class="about-card">
+            <span class="about-card-icon">🤝</span>
+            <div class="about-card-title">Trato directo</div>
+            <div class="about-card-sub">Sin intermediarios — hablas conmigo desde el primer hasta el último día</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="skills-title">Tecnologías</p>
+        <div class="skills-grid">
+          <div class="skill-tag"><span class="skill-dot"></span> HTML5 Semántico</div>
+          <div class="skill-tag"><span class="skill-dot"></span> CSS3 & Animaciones</div>
+          <div class="skill-tag"><span class="skill-dot"></span> JavaScript ES6+</div>
+          <div class="skill-tag"><span class="skill-dot"></span> Diseño Responsive</div>
+          <div class="skill-tag"><span class="skill-dot"></span> Optimización SEO</div>
+          <div class="skill-tag"><span class="skill-dot"></span> UI / UX Design</div>
+          <div class="skill-tag"><span class="skill-dot"></span> Netlify / GitHub</div>
+          <div class="skill-tag"><span class="skill-dot"></span> Figma básico</div>
+        </div>
+
+        <p class="process-title">Cómo trabajo</p>
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <div class="step-name">Escucho tu idea</div>
+              <div class="step-desc">Me cuentas qué necesitas, qué negocio tienes y cómo te imaginas el sitio.</div>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <div class="step-name">Diseño y propongo</div>
+              <div class="step-desc">Te envío una propuesta visual antes de escribir una sola línea de código.</div>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <div class="step-name">Desarrollo y ajusto</div>
+              <div class="step-desc">Construyo el sitio con revisiones hasta que quede exactamente como lo quieres.
+              </div>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-num">04</div>
+            <div class="step-body">
+              <div class="step-name">Publico y entrego</div>
+              <div class="step-desc">Subo el sitio en vivo y te enseño cómo actualizarlo si lo necesitas.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <div class="section-label">Proyectos</div>
+    <h2 class="section-title">Mi trabajo</h2>
+    <p class="section-sub">Sitios web reales que he diseñado y desarrollado. Haz clic en las imágenes para verlas en
+      detalle.</p>
+
+    <div class="filters">
+      <button class="filter-btn active" onclick="filtrar('todos', this)">Todos</button>
+      <button class="filter-btn" onclick="filtrar('landing', this)">Landing Page</button>
+      <button class="filter-btn" onclick="filtrar('corporativo', this)">Corporativo</button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- PROYECTO 1 — SILUMA (3 imágenes) -->
+      <div class="project-card" data-cat="landing">
+        <div class="carousel-wrap"
+          data-images='["IMG/siluma/SILUMA PAG.png","IMG/siluma/SILUMA PAG2.png","IMG/siluma/SILUMA PAG3.png"]'>
+          <div class="carousel-track">
+            <img src="IMG/siluma/SILUMA PAG.png" alt="SILUMA — captura 1" />
+            <img src="IMG/siluma/SILUMA PAG2.png" alt="SILUMA — captura 2" />
+            <img src="IMG/siluma/SILUMA PAG3.png" alt="SILUMA — captura 3" />
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#8249;</button>
+          <button class="carousel-btn next" aria-label="Siguiente">&#8250;</button>
+          <div class="carousel-dots"></div>
+          <div class="carousel-counter"></div>
+          <div class="carousel-hint">&#x2B1C; Ver imagen</div>
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <div class="project-title">SILUMA</div>
+          </div>
+          <p class="project-desc">
+            Sitio web desarrollado para SILUMA, empresa de velas artesanales.
+            El objetivo: mejorar su presencia digital, atraer más clientes y
+            reflejar la identidad cálida y artesanal de la marca.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Landing Page</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2 — ABC MAKER (2 imágenes) -->
+      <div class="project-card" data-cat="landing">
+        <div class="carousel-wrap"
+          data-images='["IMG/abc maker/ABC MAKER PAG.png","IMG/abc maker/ABC MAKEER PAG 2.png"]'>
+          <div class="carousel-track">
+            <img src="IMG/abc maker/ABC MAKER PAG.png" alt="ABC MAKER — captura 1" />
+            <img src="IMG/abc maker/ABC MAKEER PAG 2.png" alt="ABC MAKER — captura 2" />
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#8249;</button>
+          <button class="carousel-btn next" aria-label="Siguiente">&#8250;</button>
+          <div class="carousel-dots"></div>
+          <div class="carousel-counter"></div>
+          <div class="carousel-hint">&#x2B1C; Ver imagen</div>
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <div class="project-title">ABC MAKER</div>
+          </div>
+          <p class="project-desc">
+            Sitio corporativo para ABC MAKER, enfocado en impulsar su marca y productos.
+            Diseño profesional con estructura clara para convertir visitantes en clientes.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Responsive</span>
+            <span class="tag">Landing Page</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 3 — ZUMADESIGN (4 imágenes) 
+      <div class="project-card" data-cat="corporativo">
+        <div class="carousel-wrap" data-images='["IMG/zuma/zuma.png","IMG/zuma/zuma2.png","IMG/zuma/zuma3.png","IMG/zuma/zuma4.png"]'>
+          <div class="carousel-track">
+            <img src="IMG/zuma/zuma.png"  alt="ZUMADESIGN — captura 1" />
+            <img src="IMG/zuma/zuma2.png" alt="ZUMADESIGN — captura 2" />
+            <img src="IMG/zuma/zuma3.png" alt="ZUMADESIGN — captura 3" />
+            <img src="IMG/zuma/zuma4.png" alt="ZUMADESIGN — captura 4" />
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">&#8249;</button>
+          <button class="carousel-btn next" aria-label="Siguiente">&#8250;</button>
+          <div class="carousel-dots"></div>
+          <div class="carousel-counter"></div>
+          <div class="carousel-hint">&#x2B1C; Ver imagen</div>
+        </div>
+        <div class="project-body">
+          <div class="project-header">
+            <div class="project-title">
+              ZUMADESIGN
+              <span class="badge-nurl">Sin publicar</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Proyecto para emprendedoras colombianas del sector moda. Diseño moderno con
+            animaciones sutiles en HTML, CSS y JavaScript puro, pensado para mostrar
+            colecciones y atraer clientas con estilo.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Animaciones</span>
+            <span class="tag">Moda</span>
+          </div>
+        </div>
+      </div>
+          -->
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="section-label">Contacto</div>
+
+    <div class="contact-intro">
+      <h2 class="section-title">Hagamos algo<br><em style="font-style:italic;color:var(--accent2);">increíble
+          juntos</em></h2>
+      <p>
+        Tener una presencia digital profesional ya no es opcional — es la diferencia entre
+        que un cliente te elija a ti o a tu competencia. <strong>En 2600 Studio construimos esa diferencia.</strong>
+      </p>
+      <p>
+        No trabajamos con plantillas genéricas. Cada sitio que entregamos es diseñado y desarrollado
+        desde cero, pensando en tu negocio, tu cliente ideal y el resultado que quieres lograr.
+      </p>
+    </div>
+
+    <div class="value-strip">
+      <div class="value-strip-icon">💡</div>
+      <div class="value-strip-text">
+        <strong>"A 2.600 metros de altura, sin límites."</strong><br>
+        Cuéntanos tu idea hoy — en menos de 24 horas tienes una propuesta en tu correo.
+      </div>
+    </div>
+
+    <p class="services-label">¿Qué tipo de proyecto necesitas?</p>
+    <div class="services-grid">
+      <div class="service-card" onclick="selectService(this, 'Landing Page')" id="svc-landing">
+        <span class="service-icon">🚀</span>
+        <div class="service-name">Landing Page</div>
+        <div class="service-desc">
+          Una página enfocada en un solo objetivo: captar clientes, vender un producto
+          o promocionar un servicio. Directa, rápida y diseñada para convertir.
+        </div>
+        <div class="service-price">Ideal para: lanzamientos, promociones, negocios locales</div>
+      </div>
+      <div class="service-card" onclick="selectService(this, 'Página Web Completa')" id="svc-completo">
+        <span class="service-icon">🌐</span>
+        <div class="service-name">Página Web Completa</div>
+        <div class="service-desc">
+          Sitio multipágina con inicio, sobre nosotros, servicios, portafolio y contacto.
+          Para negocios que quieren una presencia digital sólida y profesional.
+        </div>
+        <div class="service-price">Ideal para: empresas, marcas, portafolios profesionales</div>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <h3 class="contact-meta-title">Hablemos directo</h3>
+        <p class="contact-meta-sub">
+          Prefiero el trato personal. Escríbeme por donde te sea más cómodo y
+          te respondo rápido con ideas concretas para tu proyecto.
+        </p>
+
+        <div class="contact-info">
+          <a href="mailto:2600studiobogota@gmail.com" class="contact-link">
+            <div class="contact-link-icon">@</div>
+            2600studiobogota@gmail.com
+          </a>
+          <a href="https://wa.me/573102873801" target="_blank" class="contact-link">
+            <div class="contact-link-icon">W</div>
+            +57 310 287 3801
+          </a>
+          <a href="https://www.instagram.com/2600.studio.web/" target="_blank" class="contact-link">
+            <div class="contact-link-icon">IG</div>
+            @2600.studio.web
+          </a>
+        </div>
+
+        <div class="contact-badges">
+          <div class="contact-badge">
+            <div class="contact-badge-dot"></div>
+            Respuesta garantizada en menos de 24 horas
+          </div>
+          <div class="contact-badge">
+            <div class="contact-badge-dot"></div>
+            Atención: lunes a sábado, 8 am – 8 pm (COT)
+          </div>
+          <div class="contact-badge">
+            <div class="contact-badge-dot"></div>
+            Primera consulta sin costo
+          </div>
+          <div class="contact-badge">
+            <div class="contact-badge-dot"></div>
+            Revisiones incluidas hasta que quedes satisfecho
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div id="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="f-name">Nombre</label>
+            <input type="text" id="f-name" class="form-input" placeholder="Tu nombre completo" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-email">Email</label>
+            <input type="email" id="f-email" class="form-input" placeholder="tu@email.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-service">Tipo de proyecto</label>
+            <input type="text" id="f-service" class="form-input" placeholder="Landing Page / Página completa / Otro"
+              readonly />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-msg">Cuéntame tu idea</label>
+            <textarea id="f-msg" class="form-input"
+              placeholder="¿Qué negocio tienes? ¿Qué quieres lograr con tu sitio?"></textarea>
+          </div>
+          <button class="form-submit" onclick="submitForm()">Enviar mensaje &#x2192;</button>
+        </div>
+        <div class="success-msg" id="success-msg">
+          <div class="success-check">&#x2713;</div>
+          <p class="success-title">¡Mensaje enviado!</p>
+          <p class="success-text">Te responderé en menos de 24 horas con una propuesta personalizada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 <em>2600 Studio</em> &mdash; Diseño web de altura &mdash; Bogotá, Colombia</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vista de imagen">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar">&#x2715;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Vista ampliada" />
+    <div class="lightbox-controls">
+      <button class="lightbox-btn" onclick="lightboxNav(-1)" aria-label="Anterior">&#8249;</button>
+      <span class="lightbox-counter" id="lightbox-counter">1 / 1</span>
+      <button class="lightbox-btn" onclick="lightboxNav(1)" aria-label="Siguiente">&#8250;</button>
+    </div>
+    <div class="lightbox-hint">ESC para cerrar &nbsp;·&nbsp; flechas para navegar</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
